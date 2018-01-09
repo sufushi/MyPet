@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="2017年3月12日 11 ：43"
+        android:layout_margin="3dp"/>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_time"
+        android:layout_toLeftOf="@+id/user_image"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="你好，皮卡丘！呵呵呵呵哈哈哈哈哈哈哈！"
+        android:textSize="20sp"
+        android:background="@drawable/chat_user_bg"/>
+    <ImageView
+        android:id="@+id/user_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/ic_launcher_round" />
+</RelativeLayout>
